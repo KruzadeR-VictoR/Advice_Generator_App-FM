@@ -29,6 +29,14 @@ section {
     .advice-text {
       font-size: 28px;
       text-align: center;
+      &::before {
+        content: open-quote;
+        padding-right: 0.5rem;
+      }
+      &::after {
+        content: close-quote;
+        padding-left: 0.5rem;
+      }
     }
 
     .dice-button {
@@ -43,10 +51,13 @@ section {
       aspect-ratio: 1;
       border-radius: 50%;
       background-color: hsl(150, 100%, 66%);
-    //   transition: all 350ms ease-in-out;
+      //   transition: all 350ms ease-in-out;
       &:hover {
         box-shadow: 3px 3px 30px hsl(193, 38%, 86%);
         // transition: all 350ms ease-in-out;
+        @media screen and (max-width: 700px) {
+          display: none;
+        }
       }
     }
   }

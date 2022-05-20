@@ -37,6 +37,16 @@ section .advice-card .advice-text {
   text-align: center;
 }
 
+section .advice-card .advice-text::before {
+  content: open-quote;
+  padding-right: 0.5rem;
+}
+
+section .advice-card .advice-text::after {
+  content: close-quote;
+  padding-left: 0.5rem;
+}
+
 section .advice-card .dice-button {
   cursor: pointer;
   position: absolute;
@@ -53,5 +63,11 @@ section .advice-card .dice-button {
 section .advice-card .dice-button:hover {
   -webkit-box-shadow: 3px 3px 30px #cee3e9;
           box-shadow: 3px 3px 30px #cee3e9;
+}
+
+@media screen and (max-width: 700px) {
+  section .advice-card .dice-button:hover {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
