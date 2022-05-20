@@ -10,7 +10,6 @@ const getAdvice = async () => {
   //   putting values into corresponding containers
   id.innerHTML = "#" + data.slip.id;
   advice.innerHTML = data.slip.advice;
-//   advice.innerHTML = ` " ${data.slip.advice} "`;
 
   //   set card height according to advice height
   if (advice.offsetHeight > 200) {

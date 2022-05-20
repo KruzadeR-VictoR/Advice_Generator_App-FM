@@ -56,7 +56,7 @@ section {
         box-shadow: 3px 3px 30px hsl(193, 38%, 86%);
         // transition: all 350ms ease-in-out;
         @media screen and (max-width: 700px) {
-          display: none;
+          box-shadow: none;
         }
       }
     }
