@@ -4,7 +4,9 @@ const advice = document.querySelector(".advice-text");
 const card = document.querySelector(".advice-card");
 
 const getAdvice = async () => {
-  const res = await fetch("	https://api.adviceslip.com/advice");
+  const res = await fetch("	https://api.adviceslip.com/advice", {
+    cache: "no-cache",
+  });
   const data = await res.json();
 
   //   putting values into corresponding containers
