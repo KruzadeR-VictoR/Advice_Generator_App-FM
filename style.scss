@@ -7,6 +7,39 @@
   font-family: "Manrope", sans-serif;
 }
 
+.flex{
+  display: flex;
+}
+.justify-center{
+  justify-content: center;
+}
+.items-center{
+  align-items: center;
+}
+.flex-col{
+  flex-direction: column;
+}
+.p-5{
+  padding: 1.25rem;
+}
+.mt-3{
+margin-top: .75rem;
+}
+.mt-5{
+margin-top: 1.25rem;
+}
+.mt-10{
+  margin-top: 2.5rem;
+}
+.text-white{
+  color: white;
+}
+.object-contain{
+  object-fit: contain;
+}
+
+
+
 section {
   height: 100vh;
   background-color: hsl(218, 23%, 16%);
