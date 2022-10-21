@@ -57,18 +57,18 @@
      object-fit: contain;
 }
 
-section {
+main {
   height: 100vh;
   background-color: #1f2632;
 }
 
 @media screen and (max-width: 700px) {
-  section {
+  main {
     padding: 0 2rem;
   }
 }
 
-section .advice-card {
+main .advice-card {
   position: relative;
   height: 350px;
   width: 500px;
@@ -76,28 +76,28 @@ section .advice-card {
   border-radius: 10px;
 }
 
-section .advice-card .advice-id {
+main .advice-card .advice-id {
   font-size: 0.7rem;
   color: #52ffa8;
   letter-spacing: 3px;
 }
 
-section .advice-card .advice-text {
+main .advice-card .advice-text {
   font-size: 28px;
   text-align: center;
 }
 
-section .advice-card .advice-text::before {
+main .advice-card .advice-text::before {
   content: open-quote;
   padding-right: 0.5rem;
 }
 
-section .advice-card .advice-text::after {
+main .advice-card .advice-text::after {
   content: close-quote;
   padding-left: 0.5rem;
 }
 
-section .advice-card .dice-button {
+main .advice-card .dice-button {
   cursor: pointer;
   position: absolute;
   bottom: -5%;
@@ -110,13 +110,13 @@ section .advice-card .dice-button {
   background-color: #52ffa8;
 }
 
-section .advice-card .dice-button:hover {
+main .advice-card .dice-button:hover {
   -webkit-box-shadow: 3px 3px 30px #cee3e9;
           box-shadow: 3px 3px 30px #cee3e9;
 }
 
 @media screen and (max-width: 700px) {
-  section .advice-card .dice-button:hover {
+  main .advice-card .dice-button:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
